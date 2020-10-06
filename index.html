@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		table,td{
+			border: 4px solid;
+		}
+		tr,td {
+			width: 100px;
+			height: 100px;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"></td>
+			<td rowspan="2"></td>
+		</tr>
+		<tr>
+			<td rowspan="2"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+	</table>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		table,td,th{
+			border: 4px solid;
+		}
+		tr,td {
+			width: 100px;
+			height: 100px;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+	<tr>
+		<td rowspan="2"></td>
+		<td rowspan="2"></td>
+		<td colspan="2"></td>
+	</tr>
+	<tr>
+		<td colspan="2"></td>
+	</tr>
+	<tr>
+		<td colspan="2"></td>
+		<td rowspan="2"></td>
+		<td rowspan="2"></td>
+	</tr>
+	<tr>
+		<td colspan="2"></td>
+	</tr>
+	</table>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		table,tr,td{
+			border: 4px solid;
+		}
+		tr,td {
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td rowspan="2"></td>
+			<td colspan="2" rowspan="2"></td>
+			<td rowspan="2"></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td rowspan="2"></td>
+			<td colspan="2"></td>
+			<td rowspan="2"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Information Form</h1>
+	<form action="" method="post">
+		<p>
+		  <label>name&nbsp;&nbsp;</label>
+		  <input id="name" type="text" name="name">
+	  </p>
+	  <p>
+	  	<label>pwd&nbsp;&nbsp;&nbsp;&nbsp;</label>
+	  	<input id="pwd" type="password" name="pwd" value="" size="15">
+	  </p>
+	  <p>
+	  	<label>&nbsp;&nbsp;sex&nbsp;&nbsp;&nbsp;&nbsp;</label>
+	  	<input id="male" type="radio" name="sex" value="1"checked>
+	  	<label for="male">male</label>
+	  	<input id="female" type="radio" name="sex" value="2">
+	  	<label for="femal">femal</label>
+	  </p>
+	  <p>
+			<label>&nbsp;&nbsp;age&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<select name="age" id="age">
+				<option value="1" selected>1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+		</p>
+		<p>
+			<label>course</label>
+			<input id="a1" type="checkbox" name="ah">
+			<label for="a1">Chinese</label>
+			<input id="y1" type="checkbox" name="yy">
+			<label for="y1">Math</label>
+			<input id="s1" type="checkbox" name="sw">
+			<label for="s1">English</label>
+		</p>
+		<input id="sub" type="submit" value="submit it!">
+		<input id="res" type="reset" value="reset it!">
+	</form>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		textarea{
+			resize: none;
+		}
+		.a{
+			display: inline-block;
+			width: 70px;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="post">
+		<p>
+			<label class="a">用户名：</label>
+			<input id="name" type="text" name="name" maxlength="10">
+			<span style="color: red;">字母数字下划线， 2-10位</span>
+		</p>
+		<p>
+			<label class="a">密码：</label>
+			<input id="password" type="password" name="word" value="" maxlength="20">
+			<span style="color: red;">字母数字下划线， 6-20位</span>
+		</p>
+		<p>
+			<label class="a">性别：</label>
+			<input id="man" type="radio" name="name" value="0">
+			<label for="man">男</label>
+			<input id="woman" type="radio" name="name" value="1">
+			<label for="woman">女</label>
+			<span style="color: red;">选择其中一项</span>
+		</p>
+		<p>
+			<label class="a">爱好：</label>
+			<input id="d1" type="checkbox" name="sw">
+			<label for="d1">上网</label>
+			<input id="y1" type="checkbox" name="lq">
+			<label for="y1">篮球</label>
+			<input id="s1" type="checkbox" name="zq">
+			<label for="s1">足球</label>
+			<input id="g1" type="checkbox" name="gj">
+			<label for="g1">逛街</label>
+			<input id="c1" type="checkbox" name="cg">
+			<label for="c1">唱歌</label>
+			<input id="t1" type="checkbox" name="tw">
+			<label for="t1">跳舞</label>
+			<input id="p1" type="checkbox" name="pp">
+			<label for="p1">排球</label>
+			<span style="color: red;">至少选择一项</span>
+		</p>
+		<p>
+			<label class="a">居住地：</label>
+			<select name="jzd" id="jzd">
+				<option value="1">--请选择--</option>
+				<option value="2">北京</option>
+				<option value="3">上海</option>
+				<option value="3">天津</option>
+			</select>
+			<span style="color: red;">选择一个城市</span>
+		</p>
+		<p>
+			<label class="a">Tel：</label>
+			<input id="iphone" type="text" name="iphone" maxlength="11">
+			<span style="color: red;">手机号码</span>
+		</p>
+		<p>
+			<label class="a">E-mail：</label>
+			<input id="mail" type="text" name="mail">
+			<span style="color: red;">电子邮箱号码</span>
+		</p>
+		<p>
+			<label class="a">备注：</label>
+			<textarea name="beizhu" id="intro" cols="30" rows="10"></textarea>
+			<span style="color: red;">不能为空</span>
+		</p>
+			<input id="sub" type="submit" value="注册">
+		  <input id="res" type="reset" value="取消">
+</body>
+</html>
